@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basilico Ice Cream</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+  />
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+
+
+</head>
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="top-bar">
+    <i class="fa-solid fa-ice-cream top-bar__icon"></i>
+
+    <p class="top-bar__text">
+      Free shipping on orders over $50 in the city, only for the first order of the week
+    </p>
+
+    <i class="fa-solid fa-ice-cream top-bar__icon"></i>
+  </div>
+
+  <!-- ================= MAIN NAV ================= -->
+
+  <nav class="navbar">
+    <div class="navbar__container">
+  
+      <!-- IZQUIERDA: menú -->
+      <ul class="navbar__menu">
+        <li class="navbar__item">Home</li>
+        <li class="navbar__item">Pages</li>
+        <li class="navbar__item">Shop</li>
+        <li class="navbar__item">Blog</li>
+        <li class="navbar__item">Contact</li>
+      </ul>
+  
+      <!-- CENTRO: brand -->
+      <div class="navbar__brand">
+        BASILICO
+      </div>
+  
+      <!-- DERECHA: acciones -->
+      <div class="navbar__right">
+        <div class="cart">
+          <i class="fa-solid fa-ice-cream cart__icon"></i>
+          <span class="cart__count">3</span>
+        </div>
+  
+        <button class="btn btn--primary">
+          Start Order Today
+        </button>
+  
+        <button class="info-button" aria-label="Business info">
+          <i class="fa-solid fa-ice-cream"></i>
+        </button>
+      </div>
+  
+    </div>
+  </nav>
+
+  <!-- ================= MODAL ================= -->
+  <div class="modal modal--hidden">
+    <div class="modal__content">
+      <button class="modal__close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <h3 class="modal__subtitle">Welcome To</h3>
+      <h2 class="modal__title">Basilico Ice Cream</h2>
+
+      <p class="modal__text">
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+      </p>
+
+      <div class="modal__info">
+        <p><i class="fa-solid fa-ice-cream"></i> +123 456 7890</p>
+        <p><i class="fa-solid fa-ice-cream"></i> 62 Big Tree St, Livonia, New York 14487, USA</p>
+        <p><i class="fa-solid fa-ice-cream"></i> customer_support@example.com</p>
+        <p><i class="fa-solid fa-ice-cream"></i> Monday - Friday: 8.00am - 21.00pm</p>
+        <p><i class="fa-solid fa-ice-cream"></i> Saturday - Sunday: 9.00am - 22.00pm</p>
+        <p><i class="fa-solid fa-ice-cream"></i> Holiday: Closes</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <img
+      src="img/page-title-home-1.jpg"
+      alt="Ice cream"
+      class="hero-bg"
+    />
+  
+    <div class="hero-overlay">
+      <h1>Basilico</h1>
+      <p>Ice cream crafted with intention</p>
+  
+      <button class="hero-btn">Start Order</button>
+    </div>
+  </section>
+
+  <section class="categories">
+    <div class="categories__header">
+      <span class="categories__subtitle">Categories Product</span>
+      <h2 class="categories__title">Our Ice Cream Range</h2>
+      <p class="categories__description">
+        Whether you’re after a family favourite or gourmet dessert experience,
+        Basilico Ice Cream has something for everyone.
+      </p>
+    </div>
+  
+    <div class="categories__grid">
+  
+      <article class="category-card category-card--pink category-card--lift">
+        <div class="category-card__image-wrapper">
+          <img class="category-card__image" src="img/box-item.png" alt="Maxibon">
+        </div>
+        <h3 class="category-card__title">Maxibon</h3>
+        <span class="category-card__text">That’s Milk</span>
+      </article>
+  
+      <article class="category-card category-card--yellow">
+        <div class="category-card__image-wrapper">
+          <img class="category-card__image" src="img/box-item-2.png" alt="Cadbury">
+        </div>
+        <h3 class="category-card__title">Cadbury</h3>
+        <span class="category-card__text">Cadbury, Caramilk</span>
+      </article>
+  
+      <article class="category-card category-card--blue category-card--lift">
+        <div class="category-card__image-wrapper">
+          <img class="category-card__image" src="img/box-item-3.png" alt="Connoisseur">
+        </div>
+        <h3 class="category-card__title">Connoisseur</h3>
+        <span class="category-card__text">Rocky Road</span>
+      </article>
+  
+      <article class="category-card category-card--lilac">
+        <div class="category-card__image-wrapper">
+          <img class="category-card__image" src="img/box-item-4.png" alt="Drumstick">
+        </div>
+        <h3 class="category-card__title">Drumstick</h3>
+        <span class="category-card__text">Choc Cookie</span>
+      </article>
+  
+      <article class="category-card category-card--mint category-card--lift">
+        <div class="category-card__image-wrapper">
+          <img class="category-card__image" src="img/box-item-5.png" alt="Cream Ball">
+        </div>
+        <h3 class="category-card__title">Cream Ball</h3>
+        <span class="category-card__text">Baked Choc Chip Cookie</span>
+      </article>
+  
+      <article class="category-card category-card--peach">
+        <div class="category-card__image-wrapper">
+          <img class="category-card__image" src="img/box-item-6.png" alt="Vani Box">
+        </div>
+        <h3 class="category-card__title">Vani Box</h3>
+        <span class="category-card__text">Cadbury, Caramilk</span>
+      </article>
+  
+      <article class="category-card category-card--cream category-card--lift">
+        <div class="category-card__image-wrapper">
+          <img class="category-card__image" src="img/box-item-7.png" alt="Eclipse Cream">
+        </div>
+        <h3 class="category-card__title">Eclipse Cream</h3>
+        <span class="category-card__text">Dairy Milk, Vanilla</span>
+      </article>
+  
+      <article class="category-card category-card--gray">
+        <div class="category-card__image-wrapper">
+          <img class="category-card__image" src="img/box-item-8.png" alt="Ice Cream Box">
+        </div>
+        <h3 class="category-card__title">Ice Cream Box</h3>
+        <span class="category-card__text">Ice Cream Box</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="feature__grid">
+  
+      <!-- COLUMNA 1: IMAGEN FULL -->
+      <div class="feature__image-main">
+        <img src="img//section-about-us.jpg" alt="Ice Cream Shop">
+      </div>
+  
+      <!-- COLUMNA 2: TEXTO CON FONDO -->
+      <div class="feature__content feature__content--bg">
+        <span class="feature__subtitle">Welcome!</span>
+  
+        <h2 class="feature__title">
+          There’s Lots Of<br>
+          Fun In Our<br>
+          Ice Cream Shop.
+        </h2>
+  
+        <p class="feature__text">
+          Over a thousand years ago, Marco Polo returned to Italy from the Far East
+          with a recipe that closely resembled what is now called sherbet.
+          Historians estimate that this recipe evolved into ice cream sometime
+          in the 16th century. Since then there is no looking back, ice cream has
+          been enjoyed through the ages across the world and in India.
+        </p>
+  
+        <a href="#" class="feature__btn">Learn more about us</a>
+      </div>
+
+            <!-- COLUMNA 3 -->
+      <div class="feature__side">
+
+        <!-- IMAGEN ARRIBA -->
+        <div class="feature__image-secondary">
+          <img src="img/section-about-us-2.jpg" alt="Ice Cream History">
+        </div>
+
+        <!-- TEXTO ABAJO -->
+        <div class="feature__box feature__box--bg">
+          <p class="feature__box-text">
+            A legend of San Francisco, created in 1968 and just as delicious and
+            mouth watering today.
+          </p>
+
+          <a href="#" class="feature__link">Learn more history</a>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="features__header">
+      <div class="features__icon">
+        <i class="fa-solid fa-ice-cream"></i>
+      </div>
+      <h2 class="features__title">Why our ice cream?</h2>
+    </div>
+  
+    <div class="features__list">
+      <article class="features__item">
+        <div class="features__icon-item">
+          <i class="fa-solid fa-ice-cream"></i>
+        </div>
+        <h3 class="features__item-title">Pure Fresh Milk</h3>
+        <p class="features__item-text">
+          We use only natural, fresh and local (where possible) ingredients in our ice cream.
+        </p>
+      </article>
+  
+      <article class="features__item">
+        <div class="features__icon-item">
+          <i class="fa-solid fa-ice-cream"></i>
+        </div>
+        <h3 class="features__item-title">No Preservatives</h3>
+        <p class="features__item-text">
+          Our ice cream is made with 50% double cream, delivering an incredibly rich and smooth taste.
+        </p>
+      </article>
+  
+      <article class="features__item">
+        <div class="features__icon-item">
+          <i class="fa-solid fa-ice-cream"></i>
+        </div>
+        <h3 class="features__item-title">Variety Of Models</h3>
+        <p class="features__item-text">
+          With over 32 flavours and counting, we’re confident we have something for everyone.
+        </p>
+      </article>
+  
+      <article class="features__item">
+        <div class="features__icon-item">
+          <i class="fa-solid fa-ice-cream"></i>
+        </div>
+        <h3 class="features__item-title">Perennial Brand</h3>
+        <p class="features__item-text">
+          We deliver nationwide and our retail stockists continue to grow year after year.
+        </p>
+      </article>
+    </div>
+  </section>
+  
+
+  
+  
+
+
+  
+  
+
+
+  
+  
+
+
+
+
+  
+
+  
+
+
+  
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="carousel.js"></script>
+
+
+
+</html>
