@@ -4,104 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Basilico Ice Cream</title>
-
   <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   <link rel="stylesheet" href="style.css" />
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-  />
-
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-/>
-
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-
-  <!-- ================= TOP BAR ================= -->
-  <div class="top-bar">
-    <i class="fa-solid fa-ice-cream top-bar__icon"></i>
-
-    <p class="top-bar__text">
-      Free shipping on orders over $50 in the city, only for the first order of the week
-    </p>
-
-    <i class="fa-solid fa-ice-cream top-bar__icon"></i>
-  </div>
-
-  <!-- ================= MAIN NAV ================= -->
-
-  <nav class="navbar">
-    <div class="navbar__container">
-  
-      <!-- IZQUIERDA: menú -->
-      <ul class="navbar__menu">
-        <li class="navbar__item">Home</li>
-        <li class="navbar__item">Pages</li>
-        <li class="navbar__item">Shop</li>
-        <li class="navbar__item">Blog</li>
-        <li class="navbar__item">Contact</li>
-      </ul>
-  
-      <!-- CENTRO: brand -->
-      <div class="navbar__brand">
-        BASILICO
-      </div>
-  
-      <!-- DERECHA: acciones -->
-      <div class="navbar__right">
-        <div class="cart">
-          <i class="fa-solid fa-ice-cream cart__icon"></i>
-          <span class="cart__count">3</span>
-        </div>
-  
-        <button class="btn btn--primary">
-          Start Order Today
-        </button>
-  
-        <button class="info-button" aria-label="Business info">
-          <i class="fa-solid fa-ice-cream"></i>
-        </button>
-      </div>
-  
-    </div>
-  </nav>
-
-  <!-- ================= MODAL ================= -->
-  <div class="modal modal--hidden">
-    <div class="modal__content">
-      <button class="modal__close">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-
-      <h3 class="modal__subtitle">Welcome To</h3>
-      <h2 class="modal__title">Basilico Ice Cream</h2>
-
-      <p class="modal__text">
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+  <header>
+    <!-- TOP BAR  -->
+    <div class="top-bar">
+      <i class="fa-solid fa-ice-cream top-bar__icon"></i>
+      <p class="top-bar__text">
+        Free shipping on orders over $50 in the city, only for the first order of the week
       </p>
+      <i class="fa-solid fa-ice-cream top-bar__icon"></i>
+    </div>
 
-      <div class="modal__info">
-        <p><i class="fa-solid fa-ice-cream"></i> +123 456 7890</p>
-        <p><i class="fa-solid fa-ice-cream"></i> 62 Big Tree St, Livonia, New York 14487, USA</p>
-        <p><i class="fa-solid fa-ice-cream"></i> customer_support@example.com</p>
-        <p><i class="fa-solid fa-ice-cream"></i> Monday - Friday: 8.00am - 21.00pm</p>
-        <p><i class="fa-solid fa-ice-cream"></i> Saturday - Sunday: 9.00am - 22.00pm</p>
-        <p><i class="fa-solid fa-ice-cream"></i> Holiday: Closes</p>
+    <!--  MAIN NAV  -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <button class="navbar__toggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>  
+        <ul class="navbar__menu">
+          <li><a href="#home" class="navbar__link">Home</a></li>
+          <li><a href="#flavors" class="navbar__link">Flavors</a></li>
+          <li><a href="#about" class="navbar__link">About</a></li>
+          <li><a href="#delivery" class="navbar__link">Delivery</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+        </ul>
+      
+        <!-- CENTRO: brand -->
+        <div class="navbar__brand">
+          BASILICO
+        </div>
+    
+        <!-- DERECHA: acciones -->
+        <div class="navbar__right">
+          <div class="cart">
+            <i class="fa-solid fa-ice-cream cart__icon"></i>
+            <span class="cart__count">3</span>
+          </div>
+    
+          <button class="btn btn--primary">
+            Start Order Today
+          </button>
+    
+          <button class="info-button" aria-label="Business info">
+            <i class="fa-solid fa-ice-cream"></i>
+          </button>
+        </div>
+    
+      </div>
+    </nav>
+
+    <!--  MODAL -->
+    <div class="modal modal--hidden">
+      <div class="modal__content">
+        <button class="modal__close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <h3 class="modal__subtitle">Welcome To</h3>
+        <h2 class="modal__title">Basilico Ice Cream</h2>
+
+        <p class="modal__text">
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+        </p>
+
+        <div class="modal__info">
+          <p><i class="fa-solid fa-ice-cream"></i> +123 456 7890</p>
+          <p><i class="fa-solid fa-ice-cream"></i> 62 Big Tree St, Livonia, New York 14487, USA</p>
+          <p><i class="fa-solid fa-ice-cream"></i> customer_support@example.com</p>
+          <p><i class="fa-solid fa-ice-cream"></i> Monday - Friday: 8.00am - 21.00pm</p>
+          <p><i class="fa-solid fa-ice-cream"></i> Saturday - Sunday: 9.00am - 22.00pm</p>
+          <p><i class="fa-solid fa-ice-cream"></i> Holiday: Closes</p>
+        </div>
       </div>
     </div>
-  </div>
+  </header>
 
-  <section class="hero">
+<main>
+  <section id="home" class="hero">
     <img
       src="img/page-title-home-1.jpg"
       alt="Ice cream"
@@ -116,7 +101,7 @@
     </div>
   </section>
 
-  <section class="categories">
+ <section id="flavors" class="categories">
     <div class="categories__header">
       <span class="categories__subtitle">Categories Product</span>
       <h2 class="categories__title">Our Ice Cream Range</h2>
@@ -194,24 +179,18 @@
     </div>
   </section>
 
-  <section class="feature">
+  <section id="about" class="feature">
     <div class="feature__grid">
-  
-      <!-- COLUMNA 1: IMAGEN FULL -->
       <div class="feature__image-main">
         <img src="img//section-about-us.jpg" alt="Ice Cream Shop">
       </div>
-  
-      <!-- COLUMNA 2: TEXTO CON FONDO -->
       <div class="feature__content feature__content--bg">
         <span class="feature__subtitle">Welcome!</span>
-  
         <h2 class="feature__title">
           There’s Lots Of<br>
           Fun In Our<br>
           Ice Cream Shop.
         </h2>
-  
         <p class="feature__text">
           Over a thousand years ago, Marco Polo returned to Italy from the Far East
           with a recipe that closely resembled what is now called sherbet.
@@ -219,32 +198,25 @@
           in the 16th century. Since then there is no looking back, ice cream has
           been enjoyed through the ages across the world and in India.
         </p>
-  
         <a href="#" class="feature__btn">Learn more about us</a>
       </div>
 
-            <!-- COLUMNA 3 -->
       <div class="feature__side">
-
-        <!-- IMAGEN ARRIBA -->
         <div class="feature__image-secondary">
           <img src="img/section-about-us-2.jpg" alt="Ice Cream History">
         </div>
-
-        <!-- TEXTO ABAJO -->
         <div class="feature__box feature__box--bg">
           <p class="feature__box-text">
             A legend of San Francisco, created in 1968 and just as delicious and
             mouth watering today.
           </p>
-
           <a href="#" class="feature__link">Learn more history</a>
         </div>
     </div>
     </div>
   </section>
 
-  <section class="features">
+  <section id="why-us" class="features">
     <div class="features__header">
       <div class="features__icon">
         <i class="fa-solid fa-ice-cream"></i>
@@ -294,34 +266,537 @@
       </article>
     </div>
   </section>
-  
 
-  
-  
+  <!-- SECTION: CAROUSEL -->
+  <section id="products" class="products">
+  <div class="products__header">
+    <span class="products__subtitle">Top Seller Product</span>
+    <h2 class="products__title">Our Best Ice Creams</h2>
+    <p class="products__description">
+      Over the years, we have thrived on our reputation for quality ice cream and quality service.
+    </p>
+  </div>
+
+  <!-- SWIPER -->
+  <div class="swiper products-swiper">
+    <div class="swiper-wrapper">
+
+      <!-- SLIDE 1 -->
+      <div class="swiper-slide">
+        <article class="product-card">
+          <div class="product-card__image-wrapper">
+            <img src="img/cream-1.jpg" class="product-card__image" alt="">
+            <div class="product-card__overlay">
+              <button class="product-card__icon heart-btn"><i class="fa-solid fa-heart"></i></button>
+              <button class="product-card__icon cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+          <div class="product-card__content">
+            <h3 class="product-card__title">Cherry Cream Cone</h3>
+            <p class="product-card__text">A large scoop of vanilla ice cream.</p>
+            <span class="product-card__price">$5.20</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="swiper-slide">
+        <article class="product-card">
+          <div class="product-card__image-wrapper">
+            <img src="img/cream-2.jpg" class="product-card__image" alt="">
+            <div class="product-card__overlay">
+              <button class="product-card__icon heart-btn"><i class="fa-solid fa-heart"></i></button>
+              <button class="product-card__icon cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+          <div class="product-card__content">
+            <h3 class="product-card__title">Vani Cream Box</h3>
+            <p class="product-card__text">A large scoop of vanilla ice cream.</p>
+            <span class="product-card__price">$7.00</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="swiper-slide">
+        <article class="product-card">
+          <div class="product-card__image-wrapper">
+            <img src="img/cream-3.jpg" class="product-card__image" alt="">
+            <div class="product-card__overlay">
+              <button class="product-card__icon heart-btn"><i class="fa-solid fa-heart"></i></button>
+              <button class="product-card__icon cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+          <div class="product-card__content">
+            <h3 class="product-card__title">Love Cream Cone</h3>
+            <p class="product-card__text">A large scoop of vanilla ice cream.</p>
+            <span class="product-card__price">$6.12</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- SLIDE 4 -->
+      <div class="swiper-slide">
+        <article class="product-card">
+          <div class="product-card__image-wrapper">
+            <img src="img/cream-4.jpg" class="product-card__image" alt="">
+            <div class="product-card__overlay">
+              <button class="product-card__icon heart-btn"><i class="fa-solid fa-heart"></i></button>
+              <button class="product-card__icon cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+          <div class="product-card__content">
+            <h3 class="product-card__title">Chocolate Ice Cream</h3>
+            <p class="product-card__text">A large scoop of vanilla ice cream.</p>
+            <span class="product-card__price">$4.60</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- SLIDE 5 -->
+      <div class="swiper-slide">
+        <article class="product-card">
+          <div class="product-card__image-wrapper">
+            <img src="img/cream-1.jpg" class="product-card__image" alt="">
+            <div class="product-card__overlay">
+              <button class="product-card__icon heart-btn"><i class="fa-solid fa-heart"></i></button>
+              <button class="product-card__icon cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+          <div class="product-card__content">
+            <h3 class="product-card__title">Cherry Cream Cone</h3>
+            <p class="product-card__text">A large scoop of vanilla ice cream.</p>
+            <span class="product-card__price">$5.20</span>
+          </div>
+        </article>
+      </div>
+
+    </div>
+
+    <!-- CONTROLES -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="products__cta">
+    <a href="#" class="products__button">View all products</a>
+  </div>
+</section>
+
+<section id="story" class="feature-grid">
+  <div class="feature-grid__container">
+    <article class="feature-card feature-card--wide">
+      <div class="feature-card__image-wrapper">
+        <img
+          src="img/section-top-seller.jpg"
+          alt="Ice Cream Shop"
+          class="feature-card__image"
+        />
+
+        <div class="feature-card__overlay">
+          <h2 class="feature-card__title">
+            Welcome! <br>
+            There’s Lots Of Fun <br>
+            In Our Ice Cream Shop.
+          </h2>
+
+          <p class="feature-card__text">
+            Over a thousand years ago, Marco Polo returned to Italy from the Far
+            East with a recipe that closely resembled what is now called
+            sherbet.
+          </p>
+
+          <a href="#" class="feature-card__button">
+            Learn more about us
+          </a>
+        </div>
+      </div>
+    </article>
 
 
-  
-  
+    <article class="feature-card feature-card--split">
+      <div class="feature-card__image-wrapper">
+        <img
+          src="img/section-top-seller-2.jpg"
+          alt="Ice Cream Story"
+          class="feature-card__image"
+        />
+        <div class="feature-card__overlay">
+          <h3 class="feature-card__title">
+            Our History
+          </h3>
+          <p class="feature-card__text">
+            A legend of San Francisco, created in 1968.
+          </p>
+        </div>
+      </div>
+      <div class="feature-card__box feature-card__box--blue">
+        <h3 class="feature-card__box-title">
+          Crafted With Passion
+        </h3>
+        <p class="feature-card__box-text">
+          Just as delicious and mouth watering today as it was back then,
+          bringing joy with every scoop.
+        </p>
+      </div>
+    </article>
 
+    <article class="feature-card feature-card--split">
+      <div class="feature-card__box feature-card__box--pink">
+        <h3 class="feature-card__box-title">
+          Since 1968 compiler
+        </h3>
 
-  
-  
+        <p class="feature-card__box-text">
+          A timeless recipe, carefully perfected through generations of ice
+          cream lovers.
+        </p>
+      </div>
 
+      <div class="feature-card__image-wrapper">
+        <img
+          src="img/section-top-seller-3.jpg"
+          alt="Ice Cream Cone"
+          class="feature-card__image"
+        />
 
+        <div class="feature-card__overlay">
+          <h3 class="feature-card__title">
+            Sweet Moments
+          </h3>
+          <p class="feature-card__text">
+            Every flavour tells a story.
+          </p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 
+<section id="testimonials" class="testimonials">
+  <div class="testimonials__bg"></div>
+  <div class="testimonials__header">
+    <h2 class="testimonials__title">Testimonials</h2>
+    <p class="testimonials__subtitle">
+      More than 1000+ satisfied customers with our products, Ut enim ad minim veniam.
+    </p>
+  </div>
 
-  
+  <div class="swiper testimonials__slider">
+    <div class="swiper-wrapper">
 
-  
+      <!-- 1 -->
+      <div class="swiper-slide testimonial">
+        <div class="testimonial__bubble">
+          <p class="testimonial__text">
+            As far as I’m concerned Jane’s Ice Cream is the best in this part of NY state.
+          </p>
+        </div>
+        <div class="testimonial__author">
+          <img src="img/avatar2.jpg" class="testimonial__img" alt="">
+          <div>
+            <h4 class="testimonial__name">Karina Masih</h4>
+            <span class="testimonial__location">Staten Island</span>
+          </div>
+        </div>
+      </div>
 
+      <!-- 2 -->
+      <div class="swiper-slide testimonial">
+        <div class="testimonial__bubble">
+          <p class="testimonial__text">
+            So glad we stopped by today even though it wasn't typical ice cream weather!
+          </p>
+        </div>
+        <div class="testimonial__author">
+          <img src="img/avatar-testimonial-1.jpg" class="testimonial__img" alt="">
+          <div>
+            <h4 class="testimonial__name">Abigail Deibert</h4>
+            <span class="testimonial__location">Staten Island</span>
+          </div>
+        </div>
+      </div>
 
-  
+      <!-- 3 -->
+      <div class="swiper-slide testimonial">
+        <div class="testimonial__bubble">
+          <p class="testimonial__text">
+            Honestly some of the best ice cream I've ever had! Perfect for birthdays.
+          </p>
+        </div>
+        <div class="testimonial__author">
+          <img src="img/avatar-testimonial-2.jpg" class="testimonial__img" alt="">
+          <div>
+            <h4 class="testimonial__name">Teresa Hua Garcia</h4>
+            <span class="testimonial__location">Staten Island</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 (nuevo) -->
+      <div class="swiper-slide testimonial">
+        <div class="testimonial__bubble">
+          <p class="testimonial__text">
+            The flavors are unreal. You can really feel the quality in every scoop!
+          </p>
+        </div>
+        <div class="testimonial__author">
+          <img src="img/avatar-testimonial-2.jpg" class="testimonial__img" alt="">
+          <div>
+            <h4 class="testimonial__name">Daniel Roberts</h4>
+            <span class="testimonial__location">Brooklyn</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Flechas -->
+     <div class="container-button">
+        <div class="swiper-button-prev testimonials__arrow"></div>
+        <div class="swiper-button-next testimonials__arrow"></div>
+     </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section id="delivery" class="delivery">
+  <div class="delivery__grid">
+    <div class="delivery__image">
+      <img src="img/section-deliver.jpg" alt="Ice cream delivery">
+    </div>
+
+    <div class="delivery__content">
+      <h2 class="delivery__title">We Deliver Anywhere!</h2>
+      <p class="delivery__subtitle">
+        Our ice creams are packed in an insulated box with enough dry ice to keep
+        them perfectly frozen (at -109.3°F to be exact) well into the evening of
+        the delivery date. We’ve been shipping for over 15 years. We’ve got this.
+        Guaranteed.
+      </p>
+
+      <!-- FEATURES -->
+      <div class="delivery__features">
+
+        <div class="delivery__feature">
+          <i class="fa-solid fa-snowflake delivery__icon"></i>
+          <div>
+            <h4 class="delivery__feature-title">Guaranteed Frozen</h4>
+            <p class="delivery__feature-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+            </p>
+          </div>
+        </div>
+
+        <div class="delivery__feature">
+          <i class="fa-solid fa-box delivery__icon"></i>
+          <div>
+            <h4 class="delivery__feature-title">Free Delivery 3km</h4>
+            <p class="delivery__feature-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="delivery__actions">
+        <a href="#" class="delivery__button delivery__button--primary">
+          Explore the flavors
+        </a>
+        <a href="#" class="delivery__button delivery__button--secondary">
+          FAQs about us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="info">
+  <div class="info__container">
+    <!-- Contact -->
+    <article class="info-card info-card--contact">
+      <div class="info-card__icon">
+        <i class="fa-solid fa-phone"></i>
+      </div>
+
+      <h3 class="info-card__title">
+        Contact <br /> & Support
+      </h3>
+
+      <p class="info-card__text">
+        Phone number:<br>
+        <strong>+123 456 7890</strong>
+      </p>
+
+      <p class="info-card__text">
+        Email:<br>
+        <strong>Basilicoicecreams@gmail.com</strong>
+      </p>
+
+      <a href="#" class="info-card__button">Contact us</a>
+    </article>
+
+    <!-- Open Time -->
+    <article class="info-card info-card--time">
+      <div class="info-card__icon">
+        <i class="fa-solid fa-clock"></i>
+      </div>
+
+      <h3 class="info-card__title">
+        Open Time <br /> Basilico Shop
+      </h3>
+
+      <p class="info-card__text">
+        Monday - Saturday:<br>
+        <strong>8.00 am - 21.00 pm</strong>
+      </p>
+
+      <p class="info-card__text">
+        Sunday:<br>
+        <strong>7.00 am - 22.00 pm</strong>
+      </p>
+
+      <p class="info-card__text info-card__text--bold">
+        Big Holiday: Closes
+      </p>
+
+      <a href="#" class="info-card__button info-card__button--dark">
+        Order now
+      </a>
+    </article>
+
+    <!-- Location -->
+    <article class="info-card info-card--location">
+      <div class="info-card__icon">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+
+      <h3 class="info-card__title">
+        How To <br /> Find Our Location
+      </h3>
+
+      <p class="info-card__text info-card__text--bold">
+        1250 N Kirby St #SPC 195
+      </p>
+
+      <p class="info-card__text">
+        Hemet, California (CA), 92545<br>
+        United States
+      </p>
+      <a href="#" class="info-card__button">Get directions</a>
+    </article>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+
+    <!-- ===== TOP ROW ===== -->
+    <div class="footer__top">
+      <div class="footer__brand">
+        <h3 class="footer__logo">Basilico</h3>
+      </div>
+
+      <ul class="footer__quick-links">
+        <li><a href="#" class="footer__link">Local Delivery</a></li>
+        <li><a href="#" class="footer__link">Shopping</a></li>
+        <li><a href="#" class="footer__link">Shop Location</a></li>
+      </ul>
+    </div>
+
+    <!-- ===== BOTTOM GRID ===== -->
+    <div class="footer__grid">
+
+      <!-- Contact -->
+      <div class="footer__column">
+        <h4 class="footer__title">Contact Us</h4>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon"><i class="fa-solid fa-phone"></i></span>
+          <span class="footer__text">+ 123 456 7890</span>
+        </div>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon"><i class="fa-solid fa-envelope"></i></span>
+          <span class="footer__text">Basilicoicecreams@gmail.com</span>
+        </div>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon"><i class="fa-solid fa-location-dot"></i></span>
+          <span class="footer__text">
+            1250 N Kirby St #SPC 195<br>
+            Hemet, California (CA)<br>
+            92545, United States
+          </span>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="footer__column">
+        <h4 class="footer__title">About Us</h4>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">Our Story</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Join Our Team</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Events & Catering</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Fundraising</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Scoop Shops</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer__column">
+        <h4 class="footer__title">Client Services</h4>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">FAQ</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Shipping & Returns</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Ingredients & Nutrition</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Wholesale</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer__column">
+        <h4 class="footer__title">Newsletter</h4>
+        <p class="footer__newsletter-text">
+          Sign up to receive the latest news about our offers and new products!
+        </p>
+
+        <form class="footer__form">
+          <input
+            type="email"
+            placeholder="Email address"
+            class="footer__input"
+            required
+          />
+          <button class="footer__button">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- ===== BOTTOM ===== -->
+    <div class="footer__bottom">
+      <p>Copyright © 2024 ThemesFlat. All Rights Reserved.</p>
+
+      <div class="footer__legal">
+        <a href="#" class="footer__legal-link">Terms of Use</a>
+        <a href="#" class="footer__legal-link">Privacy Policy</a>
+        <a href="#" class="footer__legal-link">Accessibility</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-<script src="script.js"></script>
-<script src="carousel.js"></script>
-
-
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/testimonials-carousel.js"></script>
+<script src="js/news-carousel.js"></script>
+<script src="js/menu-toggle.js"></script>
 
 </html>
